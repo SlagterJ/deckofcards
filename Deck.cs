@@ -36,31 +36,19 @@ namespace deckofcards {
     }
 
     protected List<Card> CreateDefaultDeck() {
-      List<Card> cards = new List<Card>(); 
-      // Amount of cards in one suit (+ 1)
-      int cardAmount = 13;
-      // Amount of suits in one deck
-      int suitAmount = 4;
-      // Amount of times to loop in order to generate all cards
-      int r = cardAmount * suitAmount;
-      
-      for (int n = 0; n < r; n++) {
-        string suitToSetCardTo = "Clubs";
-        int rankToSetCardTo = n;
-        if (n >= cardAmount * 1) {
-          suitToSetCardTo = "Hearts";
-          rankToSetCardTo = n - cardAmount * 1;
+      List<string> suits = new List<string>() {
+        "Clubs",
+        "Hearts",
+        "Spades",
+        "Diamonds"
+      };
+      List<Card> cards = new List<Card>();
+
+      foreach(string suit in suits) {
+        for (int rank = 0; rank <= 12; rank++) {
+          Card card = new Card(suit, rank);
+          cards.Add(card);
         }
-        if (n >= cardAmount * 2) {
-          suitToSetCardTo = "Spades";
-          rankToSetCardTo = n - cardAmount * 2;
-        } 
-        if (n >= cardAmount * 3) {
-          suitToSetCardTo = "Diamonds";
-          rankToSetCardTo = n - cardAmount * 3;
-        }
-        Card card = new Card(suitToSetCardTo, rankToSetCardTo);
-        cards.Add(card);
       }
 
       return cards;
