@@ -66,7 +66,9 @@ namespace deckofcards {
     }
 
     public Card GetTopCard() {
-      return this._cards[0];
+      Card card = this._cards[0];
+      this._cards.RemoveAt(0);
+      return card;
     }
   }
 }

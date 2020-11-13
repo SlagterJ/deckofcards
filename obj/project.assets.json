@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jordy/Projects/school/docgit/deckofcards.csproj",
+      "projectUniqueName": "/home/jordy/Projects/school/deckofcards/deckofcards.csproj",
       "projectName": "deckofcards",
-      "projectPath": "/home/jordy/Projects/school/docgit/deckofcards.csproj",
+      "projectPath": "/home/jordy/Projects/school/deckofcards/deckofcards.csproj",
       "packagesPath": "/home/jordy/.nuget/packages/",
-      "outputPath": "/home/jordy/Projects/school/docgit/obj/",
+      "outputPath": "/home/jordy/Projects/school/deckofcards/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jordy/.nuget/NuGet/NuGet.Config"
