@@ -22,6 +22,10 @@ namespace deckofcards {
       Console.WriteLine("Card currently on top:");
       // Dit dumpt de eerste kaart in de lijst.
       deck.GetTopCard().Dump();
+      // Dit dumpt de lijst van kaarten uit de deck na dat u de bovenste kaart pakt
+      Console.WriteLine("----------");
+      Console.WriteLine("Deck after taking the top card:");
+      deck.DumpCards();
     }
   }
 }
